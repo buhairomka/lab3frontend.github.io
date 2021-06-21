@@ -1,0 +1,510 @@
+@font-face {
+    font-family: 'Segoe';
+    src: url('../fonts/segoesc.ttf') format('truetype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Segoe, serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    min-height: 700px;
+    height: 85vh;
+    background: linear-gradient(89.43deg, #ffffff -0.5%, rgba(255, 255, 255, 0) 25.29%),
+    linear-gradient(0deg, #ffffff 0%, rgba(255, 255, 255, 0) 19.78%),
+    url("../img/top_flowers1.jpg") no-repeat left top;
+    background-size: cover;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.header-content {
+    margin-top: 4rem;
+    margin-left: 10rem;
+}
+
+.header-content h2 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 3.8rem;
+    line-height: 1.5em;
+}
+
+h2 span:first-child {
+    color: #af85ff;
+}
+
+h2 span:last-child {
+    color: #e3170a;
+}
+
+h3 {
+    margin-top: 4.5rem;
+    font-size: 2.5rem;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: inherit;
+    padding-top: 2.7rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+.menu {
+    cursor: pointer;
+}
+
+
+
+.flowers {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: red;
+    margin-left: 4rem;
+    margin-top: 0.2rem;
+}
+
+.menu {
+    margin-top: 1rem;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /*min-width: 200px;*/
+    background-image: linear-gradient(180deg, rgba(175, 133, 255, 0.7) -45%, rgba(214, 115, 223, 0.95) 100%);
+    background-color: #af85ff;
+    border-radius: 75px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    outline: none;
+    border: none;
+    transition: background-color 0.25s ease-in-out;
+    cursor: pointer;
+    font-size: 2.4rem;
+    margin-top: 5rem;
+    padding: 0.5em;
+    color: white;
+}
+
+main {
+    margin: 0;
+    padding: 0
+}
+
+.block1 {
+    margin-top: 9rem;
+}
+
+.block1 h3 {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    font-size: 2.3rem;
+    line-height: 170%;
+}
+
+
+.container {
+    padding-right: 4rem;
+    padding-left: 4rem;
+    margin: 5rem 0 0;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.left-container {
+    width: 66%;
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.inner-container {
+    display: flex;
+    width: 100%;
+}
+
+.right-container {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container-entry {
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.left-container-entry {
+    width: 50%;
+}
+
+.right-container-entry {
+    height: 50%;
+}
+
+.container-entry img {
+    width: 100%;
+    vertical-align: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+.block2 {
+    background-size: 100% auto;
+    background: linear-gradient(180deg, #FFFFFF -5.54%, rgba(255, 255, 255, 0) 22.92%), url("../img/top_flowers.jpg");
+    background-position: 25% 40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 130px;
+    width: 100%;
+    margin-top: 14rem;
+    text-align: left;
+}
+
+.block2 p {
+    text-align: center;
+    margin-left: 4rem;
+    margin-top: 3.5rem;
+    margin-right: 11rem;
+    font-size: 1.7em;
+    line-height: 190%;
+
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-right: 11rem;
+}
+
+.block2 button {
+    margin-top: 8.5rem;
+    width: 500px;
+    max-width: 1000px;
+}
+
+footer {
+    background-color: #af85ff;
+    color: #fff;
+    font-size: 1.5rem;
+    height: 165px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+
+.footer-container {
+    width: 55%;
+    padding: 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-align: center;
+}
+
+.logo-right-placeholder {
+    width: 10%;
+    font-size: 5em;
+}
+
+
+/* Desktop */
+@media only screen and (min-width: 1280px) {
+    nav {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    .block1 h3 {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    .block2 h3 {
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+}
+
+
+/* Tablet */
+@media only screen and (min-width: 720px) and (max-width: 1279px) {
+    .header-content {
+        margin-top: 3rem;
+        margin-left: 3rem;
+    }
+
+    .flowers {
+        margin-left: 5rem;
+        margin-top: 0.4rem
+    }
+
+
+
+    .block1 {
+        margin-top: 7rem;
+    }
+
+    .block1 h3 {
+        font-size: 1.8rem;
+        line-height: 170%;
+        letter-spacing: 0;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .left-container {
+        width: 100%;
+    }
+
+    .right-container {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .right-container-entry {
+        width: inherit;
+        align-self: center;
+        height: 100%;
+    }
+
+    .block2 {
+        margin-top: 7.5rem;
+    }
+
+    .block2 h3 {
+        margin-left: 3rem;
+        margin-right: 3rem;
+        margin-top: 7.5rem;
+    }
+
+    .block2 p {
+        margin-left: 3rem;
+        margin-top: 0;
+        margin-right: 7rem;
+    }
+
+    .block2 button {
+        margin-top: 4rem;
+        margin-left: 7rem;
+    }
+    footer{
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    /*.container-entry {*/
+    /*    width: 50%;*/
+    /*}*/
+}
+
+/* Phone */
+@media only screen and (max-width: 720px) {
+    nav {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .flowers {
+        display: none;
+    }
+
+    header {
+        height: 70vh;
+        background: transparent;
+        overflow: hidden;
+    }
+
+    header::before {
+        position: absolute;
+        top: 31.3rem;
+        content: '';
+        z-index: -1;
+        background-image: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 19.78%), linear-gradient(0deg, #ffffff 0%, rgba(255, 255, 255, 0) 14.78%), url("../img/top_flowers1.jpg");
+        width: 100%;
+        height: 200px;
+        background-size: 450%;
+        background-position: 85% 15%;
+        mask-image: linear-gradient(#FFFFFF 0%, #FFFFFF 100%);
+        mask-size: 100%;
+        mask-repeat: no-repeat;
+        mask-position: center;
+    }
+
+    .header {
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .header-content {
+        margin: 5.5rem 0 0;
+    }
+
+    .header-content h2 {
+        display: flex;
+        justify-content: space-around;
+        font-size: 2rem;
+        line-height: 1.5em;
+    }
+
+    .header-content h3 {
+        margin-top: 1rem;
+        font-size: 1.3rem;
+        line-height: 1.5em;
+        text-align: center;
+    }
+
+
+    .block1 {
+        margin-top: 0;
+    }
+
+    .block1 h3 {
+        margin-top: 0;
+        padding-top: 0.6em;
+        font-size: 0.9em;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    header button {
+        font-size: 1.5rem;
+        margin-top: 4.4rem;
+        padding: 0.4em 1em 0.4em 1em;
+    }
+
+    .container {
+        margin: 2rem 0.8rem 0;
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .left-container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .inner-container {
+        flex-direction: column;
+    }
+
+    .inner-container:last-child {
+        flex-direction: column-reverse;
+    }
+
+    .right-container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .container-entry {
+        overflow: hidden;
+        height: auto;
+        /*height: 130px;*/
+        font-size: 1em;
+    }
+
+    .container-entry img {
+        height: 130px;
+    }
+
+    .left-container-entry {
+        width: 100%;
+    }
+
+    .right-container-entry {
+        width: 100%;
+    }
+
+    .block2 {
+        margin-top: 0;
+        padding-bottom: 10px;
+        background-image: none;
+    }
+
+    .block2 h3 {
+        margin: 1rem;
+        margin-top: 2rem;
+        font-size: 1.2em;
+    }
+
+    .block2 p {
+
+        margin: 0;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        font-size: 0.7em;
+        line-height: 1.5em;
+    }
+
+    .btn-container {
+        margin-top: 0;
+        margin-right: 0;
+        padding-top: 0;
+    }
+
+    .block2 button {
+        margin-top: 1rem;
+        padding: 10px;
+        font-size: 0.8em;
+        width: 200px;
+        /*max-width: 1000px;*/
+    }
+
+    footer {
+        font-size: 0.7em;
+        height: auto;
+        padding: 10px 1rem;
+
+    }
+
+    .footer-logo object {
+        height: 35px;
+    }
+    .logo-right-placeholder {
+        width: 0;
+    }
+
+    .footer-container {
+        width: 100%;
+    }
+}
+
